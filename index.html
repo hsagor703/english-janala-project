@@ -74,7 +74,7 @@
     <!-- header section ends here  -->
 
     <!-- main section start here  -->
-     <main class="md:w-[1300px] md:mx-auto ml-2">
+     <main class="md:w-[1300px] md:mx-auto px-1">
         <!-- banner section start here  -->
          <section class="banner-section md:mt-52 flex md:flex-row flex-col-reverse justify-between items-center">
             <div class="banner-left text-center md:text-left">
@@ -92,6 +92,77 @@
             </div>
          </section>
         <!-- banner section ends here  -->
+
+        <!-- Vocabularies section start here  -->
+         <section class="vocabularies my-48">
+          <h1 class="vocabularies-title font-bold text-4xl text-center"><span class="text-[#00bcff]">Let's</span> Learn Vocabularies</h1>
+          <div id="all-btns" class="buttons  my-10 flex justify-center gap-4 flex-wrap">
+          </div>
+
+          <!-- search  -->
+           <div class="flex justify-center items-center pb-10">
+            <div class="join">
+               <div>
+                 <label class="input validator join-item">
+                   <input id="search-input" type="text" placeholder="search vocabularies" required />
+                 </label>
+               </div>
+               <button id="search-btn" class="btn btn-primary join-item">search</button>
+             </div>
+           </div>
+
+          <!-- loading  -->
+          <div id="loading-spinner" class="loading py-10 flex justify-center items-center mx-auto hidden">
+            <span class="loading loading-spinner text-primary"></span>
+          </div>
+
+          <div id="word-container" class="select-part hind-siliguri-font bg-[#F8F8F8] p-5 grid grid-cols-3 gap-4 ">
+            <!-- <div class="card-item bg-white p-14 text-center rounded-xl">
+              <h1 class="font-bold text-3xl">Eager</h1>
+              <p class="text-xl my-6">Meaning /Pronounciation</p>
+              <p class="text-[#18181B] font-semibold text-3xl mb-14">"আগ্রহী / ইগার"</p>
+              <div class="icons flex justify-between">
+                <i class="fa-solid fa-circle-info"></i>
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+            </div> -->
+            
+           <div class="text-center col-span-full p-14 hind-siliguri-font">
+             <p class="text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
+             <h3 class="text-[#292524] font-medium text-4xl mt-3">একটি Lesson Select করুন।</h3>
+           </div>
+          </div>
+
+
+          <!-- Open the modal using ID.showModal() method -->
+              <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle w-full">
+                <div id="details-modal">
+                  <!-- <div class="modal-box">
+                  <h3 class="text-2xl font-bold ">Eager (<i class="fa-solid fa-microphone-lines"></i>:ইগার)</h3>
+                  <p class="pt-4 pb-2 font-semibold text-xl">Meaning</p>
+                  <p class="pb-4 hind-siliguri-font text-xl font-medium">আগ্রহী</p>
+                  <p class=" font-semibold text-xl pb-2 ">Example</p>
+                  <p class="pb-4 text-xl">The kids were eager to open their gifts.</p>
+                  <p class="hind-siliguri-font font-medium text-xl pb-2 ">সমার্থক শব্দ গুলো</p>
+                  <div class="text-xl">
+                    <button class="btn btn-soft btn-primary">Enthusiastic</button>
+                    <button class="btn btn-soft btn-primary">excited</button>
+                    <button class="btn btn-soft btn-primary">keen</button>
+                  </div>
+                  <button class="btn btn-active btn-primary mt-12 font-medium text-sm">Complete Learning</button>
+                  <div class="modal-action">
+                    <form method="dialog">
+        
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                  </div> -->
+                </div>
+              
+              </dialog>
+         </section>
+        <!-- Vocabularies section ends here  -->
      </main>
     <!-- main section ends here  -->
      
